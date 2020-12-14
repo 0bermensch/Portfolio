@@ -1,0 +1,238 @@
+@font-face {
+  font-family: "biorhyme";
+  src: url(../Assets/biorhyme/BioRhyme-Regular.ttf);
+}
+
+@font-face {
+  font-family: "biorhyme-light";
+  src: url(../Assets//biorhyme/BioRhyme-Light.ttf);
+}
+
+@font-face {
+  font-family: "biorhyme-bold";
+  src: url(../Assets/biorhyme/BioRhyme-Bold.ttf);
+}
+
+@font-face {
+  font-family: "biorhyme-extrabold";
+  src: url(../Assets/biorhyme/BioRhyme-ExtraBold.ttf);
+}
+
+@font-face {
+  font-family: "biorhyme-extralight";
+  src: url(../Assets/biorhyme/BioRhyme-ExtraLight.ttf);
+}
+
+@font-face {
+  font-family: "firacode";
+  src: url(../Assets/biorhyme/FiraCode-Medium.ttf);
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: #f7e9e9;
+}
+
+.navbar__socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-left: 2%;
+}
+
+.navbar__socials--logo {
+  height: 25px;
+  width: 25px;
+  margin-right: 10px;
+}
+
+.navbar__hamburgernav {
+  background-color: white;
+  position: fixed;
+  top: 41px;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  text-align: left;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 70px 19.43% 100px;
+  margin: 0;
+  font-family: "biorhyme";
+}
+
+.navbar__hamburgernav--item {
+  text-decoration: none;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.navbar__navs {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .navbar__hamburger {
+    display: none;
+  }
+  .navbar__socials--logo {
+    height: 31px;
+    width: 31px;
+  }
+  .navbar__navs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: "biorhyme";
+    margin-right: 2%;
+  }
+  .navbar__navs--item {
+    margin-left: 2rem;
+    color: black;
+    font-size: 12px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .navbar__socials--logo {
+    height: 50px;
+    width: 50px;
+  }
+  .navbar__navs--item {
+    margin-left: 2rem;
+    font-size: 25px;
+  }
+}
+
+.intro {
+  font-family: "firacode";
+  background-color: black;
+  height: 100vh;
+  font-size: 19px;
+  color: white;
+}
+
+.intro__context {
+  padding: 40px 25% 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.intro__context--title {
+  margin: 14px 0;
+  font-size: 16px;
+}
+
+.intro__context--content {
+  font-style: oblique;
+  font-weight: bolder;
+  color: #edb879;
+}
+
+.intro__toprojects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 30px;
+  margin-left: 20vw;
+}
+
+.intro__toprojects--arrow {
+  height: 50px;
+  width: 20px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.intro__toprojects--text {
+  text-decoration: none;
+  font-size: 10px;
+  margin: 0;
+  -webkit-transform: rotateZ(-90deg);
+          transform: rotateZ(-90deg);
+}
+
+.intro__img {
+  border-radius: 50%;
+  width: 20vw;
+}
+
+@media only screen and (min-width: 768px) {
+  .intro {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 20vh 10%;
+  }
+  .intro__context {
+    padding: 0;
+    font-size: 25px;
+    width: 50%;
+  }
+  .intro__context--title {
+    font-size: 18px;
+  }
+  .intro__img {
+    display: inline;
+    height: 50vh;
+    width: 32vw;
+    border-radius: 0;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .intro__context {
+    font-size: 40px;
+  }
+  .intro__context--title {
+    font-size: 30px;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/*# sourceMappingURL=index.css.map */

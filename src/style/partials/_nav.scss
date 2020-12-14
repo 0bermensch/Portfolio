@@ -1,0 +1,81 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  background-color: $offwhite;
+  &__socials {
+    display: flex;
+    flex-direction: row;
+    margin-left: 2%;
+  }
+  &__socials--logo {
+    height: 25px;
+    width: 25px;
+    margin-right: 10px;
+  }
+  &__hamburgernav {
+    background-color: white;
+    position: fixed;
+    top: 41px;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    text-align: left;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 70px 19.43% 100px;
+    margin: 0;
+    font-family: "biorhyme";
+  }
+  &__hamburgernav--item {
+    text-decoration: none;
+    color: black;
+    margin-bottom: 10px;
+  }
+
+  &__navs {
+    display: none;
+  }
+}
+
+@include tablet {
+  .navbar {
+    &__hamburger {
+      display: none;
+    }
+    &__socials--logo {
+      height: 31px;
+      width: 31px;
+    }
+    &__navs {
+      display: flex;
+      flex-direction: row;
+      text-decoration: none;
+      list-style-type: none;
+      font-family: "biorhyme";
+      margin-right: 2%;
+    }
+    &__navs--item {
+      margin-left: 2rem;
+      color: black;
+      font-size: 12px;
+    }
+  }
+}
+
+@include desktop {
+  .navbar {
+    &__socials--logo {
+      height: 50px;
+      width: 50px;
+    }
+
+    &__navs--item {
+      margin-left: 2rem;
+      font-size: 25px;
+    }
+  }
+}

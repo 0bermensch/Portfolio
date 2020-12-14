@@ -1,0 +1,76 @@
+.intro {
+  font-family: "firacode";
+  background-color: black;
+  height: 100vh;
+  font-size: 19px;
+  color: white;
+  &__context {
+    padding: 40px 25% 0;
+    display: flex;
+    flex-direction: column;
+  }
+  &__context--title {
+    margin: 14px 0;
+    font-size: 16px;
+  }
+  &__context--content {
+    font-style: oblique;
+    font-weight: bolder;
+    color: rgb(237, 184, 121);
+  }
+  &__toprojects {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    margin-left: 20vw;
+  }
+  &__toprojects--arrow {
+    height: 50px;
+    width: 20px;
+    transform: rotate(180deg);
+  }
+  &__toprojects--text {
+    text-decoration: none;
+    font-size: 10px;
+    margin: 0;
+    transform: rotateZ(-90deg);
+  }
+  &__img {
+    border-radius: 50%;
+    width: 20vw;
+  }
+}
+
+@include tablet {
+  .intro {
+    display: flex;
+    flex-direction: row;
+    padding: 20vh 10%;
+
+    &__context {
+      padding: 0;
+      font-size: 25px;
+      width: 50%;
+    }
+    &__context--title {
+      font-size: 18px;
+    }
+    &__img {
+      display: inline;
+      height: 50vh;
+      width: 32vw;
+      border-radius: 0;
+    }
+  }
+}
+
+@include desktop {
+  .intro {
+    &__context {
+      font-size: 40px;
+    }
+    &__context--title {
+      font-size: 30px;
+    }
+  }
+}
