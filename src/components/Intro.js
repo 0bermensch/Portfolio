@@ -1,7 +1,7 @@
 import React from "react";
 import Typist from "react-typist";
-import downarrow from "../Assets/white-arrow-png-41942.png";
-import mypic from "../Assets/Jason_Lo_WD.jpg";
+import downarrow from "../Assets/intro/white-arrow-png-41942.png";
+import mypic from "../Assets/intro/Jason_Lo_WD.jpg";
 import { Link } from "react-scroll";
 
 /*Typist stdTypingDelay blink={true}*/
@@ -33,7 +33,8 @@ const Introduction = () => {
             src={downarrow}
             alt="downarrow"
           />
-          <div className="intro__toprojects--text">project</div>
+          <div className="intro__toprojects--text">projects</div>
+          <img className="intro__toprojects--img" src={mypic} alt="mypic" />
         </Link>
       </div>
       <img className="intro__img" src={mypic} alt="mypic" />

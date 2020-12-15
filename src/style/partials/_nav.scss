@@ -63,6 +63,11 @@
       color: black;
       font-size: 12px;
     }
+    &__navs--item:hover {
+      color: violet;
+      text-decoration: none;
+      cursor: pointer;
+    }
   }
 }
 

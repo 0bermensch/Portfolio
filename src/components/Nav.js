@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import hamburger from "../Assets/icon-hamburger.svg";
-import close from "../Assets/icon-close.svg";
+import hamburger from "../Assets/navicons/icon-hamburger.svg";
 import linkedinlogo from "../Assets/icons/linkedin-original.svg";
 import githublogo from "../Assets/icons/icons8-github.svg";
 import "bootstrap/dist/css/bootstrap.min.css";

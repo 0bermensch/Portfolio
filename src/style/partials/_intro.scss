@@ -5,7 +5,7 @@
   font-size: 19px;
   color: white;
   &__context {
-    padding: 40px 25% 0;
+    padding: 80px 25% 0;
     display: flex;
     flex-direction: column;
   }
@@ -22,20 +22,28 @@
     display: flex;
     flex-direction: row;
     margin-top: 30px;
-    margin-left: 20vw;
+    margin-left: 5%;
   }
   &__toprojects--arrow {
     height: 50px;
     width: 20px;
+    margin-top: 18px;
+    margin-right: 10%;
     transform: rotate(180deg);
   }
   &__toprojects--text {
     text-decoration: none;
     font-size: 10px;
-    margin: 0;
+    margin-left: 1px;
+    color: white;
     transform: rotateZ(-90deg);
   }
+  &__toprojects--img {
+    border-radius: 50%;
+    width: 25vw;
+  }
   &__img {
+    display: none;
     border-radius: 50%;
     width: 20vw;
   }
@@ -45,20 +53,36 @@
   .intro {
     display: flex;
     flex-direction: row;
-    padding: 20vh 10%;
+    padding: 0;
 
     &__context {
-      padding: 0;
+      padding: 70px 0 0 8%;
       font-size: 25px;
-      width: 50%;
+      width: 55%;
     }
     &__context--title {
       font-size: 18px;
+      padding: 3vh 0;
+    }
+    &__context--content {
+      width: 80%;
+    }
+    &__toprojects--arrow {
+      height: 100px;
+      width: 50px;
+      margin-right: 5%;
+    }
+    &__toprojects--text {
+      margin-left: 1px;
+      font-size: 18px;
+    }
+    &__toprojects--img {
+      display: none;
     }
     &__img {
       display: inline;
-      height: 50vh;
-      width: 32vw;
+      height: 100vh;
+      width: 45%;
       border-radius: 0;
     }
   }
@@ -70,6 +94,17 @@
       font-size: 40px;
     }
     &__context--title {
+      font-size: 30px;
+    }
+    &__img {
+      height: 93vh;
+    }
+    &__toprojects--arrow {
+      height: 200px;
+      width: 100px;
+      margin-right: 5%;
+    }
+    &__toprojects--text {
       font-size: 30px;
     }
   }

@@ -3,6 +3,9 @@
 @import "./partials/fonts";
 @import "./partials/nav";
 @import "./partials/intro";
+@import "./partials/about";
+@import "./partials/tech";
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -10,4 +13,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.App {
+  background-color: black;
 }
