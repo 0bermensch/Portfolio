@@ -9,14 +9,14 @@ const About = () => {
   return (
     <div className="about">
       <div className="about__content">
-        <h2 className="about__content--mission">Mission</h2>
+        <h2 className="about__content--mission">ABOUT ME</h2>
         <Typist avgTypingDelay className="about__content--missiontext">
           As a developer, it is my goal to help dreamers, entrepreneurs, and
           businesses to bring their ideas into reality on web/mobile platforms
           for the betterment of our society.
         </Typist>
       </div>
-      <div className="about__valuetitle"> My Core Values</div>
+      <div className="about__valuetitle">MY CORE VALUES</div>
       <div className="about__values">
         <div className="about__values--1">
           <div className="about__values--section">

@@ -1,25 +1,28 @@
 .about {
-  background-color: $offwhite;
+  background-color: black;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
+  color: $offwhite;
   &__content {
     text-align: center;
     padding-top: 20px;
   }
   &__content--mission {
-    font-family: "biorhyme-bold";
+    font-family: "biorhyme-extrabold";
     text-decoration: underline;
+
     font-size: 30px;
   }
   &__content--missiontext {
     font-family: "biorhyme-bold";
     font-size: 17px;
     padding: 10px 10%;
+    height: 223px;
   }
   &__valuetitle {
     text-align: center;
     padding: 20px 0 0;
-    font-family: "biorhyme-bold";
+    font-family: "biorhyme-extrabold";
     text-decoration: underline;
     font-size: 20px;
   }
@@ -48,7 +51,7 @@
 @include tablet {
   .about {
     &__content {
-      padding: 40px 10% 20px;
+      padding: 40px 5% 20px;
     }
     &__content--mission {
       font-size: 40px;
@@ -78,6 +81,31 @@
     &__values--icon {
       height: 80px;
       width: 80px;
+    }
+  }
+}
+
+@include desktop {
+  .about {
+    &__content {
+      padding: 30px 5%;
+    }
+    &__content--mission {
+      font-size: 50px;
+      padding-bottom: 20px;
+    }
+    &__content--missiontext {
+      font-size: 30px;
+    }
+    &__valuetitle {
+      font-size: 40px;
+    }
+    &__values--icon {
+      height: 140px;
+      width: 140px;
+    }
+    &__values--value {
+      font-size: 30px;
     }
   }
 }

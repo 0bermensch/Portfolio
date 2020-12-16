@@ -1,0 +1,81 @@
+.techcontainer {
+  background-color: black;
+  height: 100vh;
+}
+.techtitle {
+  font-family: "biorhyme-extrabold";
+  color: $offwhite;
+  background-color: black;
+  text-align: center;
+  font-size: 32px;
+}
+.tech {
+  background-color: black;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  display: flex;
+  flex-direction: row;
+  &__pic {
+    display: none;
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    font-family: "biorhyme-bold";
+    color: $offwhite;
+    width: 100%;
+    padding: 10px 10%;
+  }
+  &__title {
+    font-size: 22px;
+  }
+
+  &__logo {
+    height: 50px;
+    width: 50px;
+    padding: 5px 1%;
+  }
+}
+
+@include tablet {
+  .techtitle {
+    font-size: 50px;
+  }
+  .tech {
+    border-top-left-radius: 80px;
+    border-top-right-radius: 80px;
+    &__pic {
+      display: flex;
+      width: 45%;
+      height: 90vh;
+      border-top-left-radius: 80px;
+      object-fit: cover;
+    }
+    &__content {
+      padding: 0;
+      height: 90vh;
+    }
+    &__logo {
+      height: 70px;
+      width: 70px;
+      padding: 1px 2%;
+    }
+  }
+}
+
+@include desktop {
+  .techtitle {
+    font-size: 70px;
+  }
+  .tech {
+    &__title {
+      font-size: 50px;
+    }
+    &__logo {
+      height: 90px;
+      width: 90px;
+    }
+  }
+}

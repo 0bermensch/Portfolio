@@ -24,10 +24,42 @@ const Tech = () => {
   }, []);
 
   return (
-    <div className="tech" id="tech">
-      <img className="tech__pic" src={pic} alt="pic" />
+    <div className="techcontainer" id="tech">
+      <div className="techtitle">Tech</div>
+      <div className="tech">
+        <img className="tech__pic" src={pic} alt="pic" />
 
-      <div></div>
+        <div className="tech__content">
+          <div data-aos="fade-up" className="tech__frontend">
+            <h2 className="tech__title">Front-End</h2>
+            <img className="tech__logo" src={reactlogo} alt="logo" />
+            <img className="tech__logo" src={reduxlogo} alt="logo" />
+            <img className="tech__logo" src={reactnativelogo} alt="logo" />
+            <img className="tech__logo" src={sasslogo} alt="logo" />
+          </div>
+          <div data-aos="fade-up" className="tech__backend">
+            <h2 className="tech__title">Back-End</h2>
+            <img className="tech__logo" src={nodejslogo} alt="logo" />
+            <img className="tech__logo" src={expresslogo} alt="logo" />
+            <img className="tech__logo" src={graphqllogo} alt="logo" />
+          </div>
+
+          <div data-aos="fade-up" className="tech__database">
+            <h2 className="tech__title">Database</h2>
+            <img className="tech__logo" src={mysqllogo} alt="logo" />
+            <img className="tech__logo" src={postgresqllogo} alt="logo" />
+            <img className="tech__logo" src={mongodblogo} alt="logo" />
+          </div>
+          <div data-aos="fade-up" className="tech__others">
+            <h2 className="tech__title">Other</h2>
+            <img className="tech__logo" src={javascriptlogo} alt="logo" />
+            <img className="tech__logo" src={typescriptlogo} alt="logo" />
+            <img className="tech__logo" src={awslogo} alt="logo" />
+            <img className="tech__logo" src={herokulogo} alt="logo" />
+            <img className="tech__logo" src={npmlogo} alt="logo" />
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
