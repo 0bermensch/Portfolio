@@ -513,6 +513,172 @@
   }
 }
 
+.projectitle {
+  color: #f7e9e9;
+  text-align: center;
+  font-family: "biorhyme-extrabold";
+  font-size: 32px;
+  padding-bottom: 20px;
+}
+
+.projects {
+  text-align: center;
+  background-color: black;
+}
+
+.projects__project {
+  height: 100vh;
+  padding-bottom: 20px;
+}
+
+.projects__project--name {
+  color: white;
+  font-family: "biorhyme-bold";
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+.projects__project--image {
+  height: 50vh;
+  width: 60%;
+  padding-bottom: 10px;
+  border-radius: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .projectitle {
+    font-size: 50px;
+  }
+  .projects {
+    display: -ms-grid;
+    display: grid;
+    max-width: 100%;
+    padding: 0 10%;
+    -ms-grid-columns: 40% 40%;
+        grid-template-columns: 40% 40%;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    grid-column-gap: 5%;
+    grid-row-gap: 5%;
+  }
+}
+
+.info {
+  height: 100vh;
+  padding: 0 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #f7e9e9;
+  color: black;
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+}
+
+.info__jobs, .info__education, .info__certification {
+  font-family: "biorhyme-extrabold";
+  color: black;
+  padding-top: 30px;
+}
+
+.info__title {
+  font-size: 30px;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid black;
+}
+
+.info__entity {
+  font-family: "biorhyme-bold";
+  font-size: 16px;
+}
+
+.info__role {
+  font-family: "biorhyme";
+  font-size: 13px;
+  margin-bottom: 0.2rem;
+}
+
+.info__date {
+  font-family: "biorhyme-light";
+  font-size: 13px;
+  margin: 0;
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid black;
+}
+
+.infotitle {
+  font-family: "biorhyme-extrabold";
+  text-align: center;
+  margin-top: 8rem;
+  font-size: 2rem;
+  padding-top: 6rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .infotitle {
+    margin-top: 2rem;
+    font-size: 4rem;
+  }
+  .info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0 10%;
+    height: 30rem;
+    border-top-right-radius: 100px;
+    border-top-left-radius: 100px;
+  }
+  .info__jobs, .info__education, .info__certification {
+    width: 30%;
+  }
+  .info__title {
+    font-size: 28px;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid black;
+  }
+  .info__entity {
+    font-size: 22px;
+  }
+  .info__role {
+    font-size: 17px;
+  }
+  .info__date {
+    font-size: 17px;
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid black;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    margin-top: 0rem;
+  }
+  .info__jobs, .info__education, .info__certification {
+    width: 30%;
+  }
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;

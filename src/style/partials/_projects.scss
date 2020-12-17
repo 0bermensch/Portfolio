@@ -1,2 +1,42 @@
-.projectcontainer {
+.projectitle {
+  color: $offwhite;
+  text-align: center;
+  font-family: "biorhyme-extrabold";
+  font-size: 32px;
+  padding-bottom: 20px;
+}
+.projects {
+  text-align: center;
+  background-color: black;
+  &__project {
+    height: 100vh;
+    padding-bottom: 20px;
+  }
+  &__project--name {
+    color: white;
+    font-family: "biorhyme-bold";
+    font-size: 20px;
+    padding-bottom: 10px;
+  }
+  &__project--image {
+    height: 50vh;
+    width: 60%;
+    padding-bottom: 10px;
+    border-radius: 20px;
+  }
+}
+
+@include tablet {
+  .projectitle {
+    font-size: 50px;
+  }
+  .projects {
+    display: grid;
+    max-width: 100%;
+    padding: 0 10%;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: auto;
+    grid-column-gap: 5%;
+    grid-row-gap: 5%;
+  }
 }

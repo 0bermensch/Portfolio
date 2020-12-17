@@ -23,12 +23,11 @@ import omdb2 from "../Assets/Projectpics/omdb2.PNG";
 import omdb3 from "../Assets/Projectpics/omdb3.PNG";
 import omdbvid from "../Assets/projectvids/OMDB - Vid.mp4";
 
-export const projectinfo = [
+export var projectinfo = [
   {
     id: 1,
     title: "Trail-Tracker",
     images: [{ image1: track1 }, { image2: track2 }, { image3: track3 }],
-
     modal: [
       { title: "Trail-Tracker" },
       { github: "https://github.com/0bermensch/Trail-Tracker" },
