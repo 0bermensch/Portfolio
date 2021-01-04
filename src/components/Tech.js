@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import awslogo from "../Assets/icons/amazonwebservices-original.svg";
@@ -17,11 +17,36 @@ import postgresqllogo from "../Assets/icons/postgresql-original.svg";
 import herokulogo from "../Assets/icons/heroku-original.svg";
 import npmlogo from "../Assets/icons/npm-original-wordmark.svg";
 import pic from "../Assets/pexels-negative-space-169573.jpg";
+import githublogo from "../Assets/icons/github-11-128.png";
 
 const Tech = () => {
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);
+
+  const [frontend] = useState([
+    { img: reactlogo, name: "React" },
+    { img: reduxlogo, name: "Redux" },
+    { img: reactnativelogo, name: "React Native" },
+    { img: sasslogo, name: "Sass" },
+  ]);
+  const [backend] = useState([
+    { img: nodejslogo, name: "Node.js" },
+    { img: expresslogo, name: "Express.js" },
+    { img: graphqllogo, name: "GraphQL" },
+  ]);
+  const [database] = useState([
+    { img: mysqllogo, name: "MySQL" },
+    { img: postgresqllogo, name: "PostgreSQL" },
+    { img: mongodblogo, name: "MongoDB" },
+  ]);
+  const [other] = useState([
+    { img: javascriptlogo, name: "Javascript" },
+    { img: typescriptlogo, name: "Typescript" },
+    { img: awslogo, name: "AWS" },
+    { img: githublogo, name: "Github" },
+    { img: npmlogo, name: "NPM" },
+  ]);
 
   return (
     <div className="techcontainer" id="tech">
@@ -32,31 +57,71 @@ const Tech = () => {
         <div className="tech__content">
           <div data-aos="fade-up" className="tech__frontend">
             <h2 className="tech__title">Front-End</h2>
-            <img className="tech__logo" src={reactlogo} alt="logo" />
-            <img className="tech__logo" src={reduxlogo} alt="logo" />
-            <img className="tech__logo" src={reactnativelogo} alt="logo" />
-            <img className="tech__logo" src={sasslogo} alt="logo" />
+            <div className="tech__info">
+              {frontend.map((content) => {
+                return (
+                  <div className="tech__logo">
+                    <img
+                      className="tech__logo--logo"
+                      src={content.img}
+                      alt={content.img}
+                    />
+                    <div className="tech__logo--name">{content.name}</div>
+                  </div>
+                );
+              })}
+            </div>
           </div>
           <div data-aos="fade-up" className="tech__backend">
             <h2 className="tech__title">Back-End</h2>
-            <img className="tech__logo" src={nodejslogo} alt="logo" />
-            <img className="tech__logo" src={expresslogo} alt="logo" />
-            <img className="tech__logo" src={graphqllogo} alt="logo" />
+            <div className="tech__info">
+              {backend.map((content) => {
+                return (
+                  <div className="tech__logo">
+                    <img
+                      className="tech__logo--logo"
+                      src={content.img}
+                      alt={content.img}
+                    />
+                    <div className="tech__logo--name">{content.name}</div>
+                  </div>
+                );
+              })}
+            </div>
           </div>
-
           <div data-aos="fade-up" className="tech__database">
             <h2 className="tech__title">Database</h2>
-            <img className="tech__logo" src={mysqllogo} alt="logo" />
-            <img className="tech__logo" src={postgresqllogo} alt="logo" />
-            <img className="tech__logo" src={mongodblogo} alt="logo" />
+            <div className="tech__info">
+              {database.map((content) => {
+                return (
+                  <div className="tech__logo">
+                    <img
+                      className="tech__logo--logo"
+                      src={content.img}
+                      alt={content.img}
+                    />
+                    <div className="tech__logo--name">{content.name}</div>
+                  </div>
+                );
+              })}
+            </div>
           </div>
           <div data-aos="fade-up" className="tech__others">
             <h2 className="tech__title">Other</h2>
-            <img className="tech__logo" src={javascriptlogo} alt="logo" />
-            <img className="tech__logo" src={typescriptlogo} alt="logo" />
-            <img className="tech__logo" src={awslogo} alt="logo" />
-            <img className="tech__logo" src={herokulogo} alt="logo" />
-            <img className="tech__logo" src={npmlogo} alt="logo" />
+            <div className="tech__info">
+              {other.map((content) => {
+                return (
+                  <div className="tech__logo">
+                    <img
+                      className="tech__logo--logo"
+                      src={content.img}
+                      alt={content.img}
+                    />
+                    <div className="tech__logo--name">{content.name}</div>
+                  </div>
+                );
+              })}
+            </div>
           </div>
         </div>
       </div>

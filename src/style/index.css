@@ -465,10 +465,36 @@
   font-size: 22px;
 }
 
+.tech__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
 .tech__logo {
+  color: #f7e9e9;
+}
+
+.tech__logo:hover {
+  text-decoration: underline;
+  color: grey;
+}
+
+.tech__logo--logo {
   height: 50px;
   width: 50px;
   padding: 5px 1%;
+}
+
+.tech__logo--name {
+  font-size: 10px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -493,10 +519,13 @@
     padding: 0;
     height: 90vh;
   }
-  .tech__logo {
+  .tech__logo--logo {
     height: 70px;
     width: 70px;
     padding: 1px 2%;
+  }
+  .tech__logo--name {
+    font-size: 13px;
   }
 }
 
@@ -507,7 +536,7 @@
   .tech__title {
     font-size: 50px;
   }
-  .tech__logo {
+  .tech__logo--logo {
     height: 90px;
     width: 90px;
   }
@@ -563,120 +592,13 @@
   }
 }
 
-.info {
+.contact {
   height: 100vh;
-  padding: 0 10%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  background-color: #f7e9e9;
-  color: black;
-  border-top-right-radius: 50px;
-  border-top-left-radius: 50px;
 }
 
-.info__jobs, .info__education, .info__certification {
+.contact__title {
+  color: white;
   font-family: "biorhyme-extrabold";
-  color: black;
-  padding-top: 30px;
-}
-
-.info__title {
-  font-size: 30px;
-  padding-bottom: 1rem;
-  border-bottom: 1px solid black;
-}
-
-.info__entity {
-  font-family: "biorhyme-bold";
-  font-size: 16px;
-}
-
-.info__role {
-  font-family: "biorhyme";
-  font-size: 13px;
-  margin-bottom: 0.2rem;
-}
-
-.info__date {
-  font-family: "biorhyme-light";
-  font-size: 13px;
-  margin: 0;
-  padding-bottom: 0.8rem;
-  border-bottom: 1px solid black;
-}
-
-.infotitle {
-  font-family: "biorhyme-extrabold";
-  text-align: center;
-  margin-top: 8rem;
-  font-size: 2rem;
-  padding-top: 6rem;
-}
-
-@media only screen and (min-width: 768px) {
-  .infotitle {
-    margin-top: 2rem;
-    font-size: 4rem;
-  }
-  .info {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    padding: 0 10%;
-    height: 30rem;
-    border-top-right-radius: 100px;
-    border-top-left-radius: 100px;
-  }
-  .info__jobs, .info__education, .info__certification {
-    width: 30%;
-  }
-  .info__title {
-    font-size: 28px;
-    padding-bottom: 1rem;
-    border-bottom: 2px solid black;
-  }
-  .info__entity {
-    font-size: 22px;
-  }
-  .info__role {
-    font-size: 17px;
-  }
-  .info__date {
-    font-size: 17px;
-    padding-bottom: 1.5rem;
-    border-bottom: 2px solid black;
-  }
-}
-
-@media only screen and (min-width: 1440px) {
-  .info {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    margin-top: 0rem;
-  }
-  .info__jobs, .info__education, .info__certification {
-    width: 30%;
-  }
 }
 
 body {

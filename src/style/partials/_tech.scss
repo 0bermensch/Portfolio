@@ -31,11 +31,26 @@
   &__title {
     font-size: 22px;
   }
-
+  &__info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
   &__logo {
+    color: $offwhite;
+  }
+  &__logo:hover {
+    text-decoration: underline;
+    color: grey;
+  }
+
+  &__logo--logo {
     height: 50px;
     width: 50px;
     padding: 5px 1%;
+  }
+  &__logo--name {
+    font-size: 10px;
   }
 }
 
@@ -57,10 +72,13 @@
       padding: 0;
       height: 90vh;
     }
-    &__logo {
+    &__logo--logo {
       height: 70px;
       width: 70px;
       padding: 1px 2%;
+    }
+    &__logo--name {
+      font-size: 13px;
     }
   }
 }
@@ -73,7 +91,7 @@
     &__title {
       font-size: 50px;
     }
-    &__logo {
+    &__logo--logo {
       height: 90px;
       width: 90px;
     }
