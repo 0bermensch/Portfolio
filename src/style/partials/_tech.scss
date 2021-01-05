@@ -7,7 +7,7 @@
   color: $offwhite;
   background-color: black;
   text-align: center;
-  font-size: 32px;
+  font-size: 30px;
 }
 .tech {
   background-color: black;
@@ -29,7 +29,7 @@
     padding: 10px 10%;
   }
   &__title {
-    font-size: 22px;
+    font-size: 18px;
   }
   &__info {
     display: flex;
@@ -38,6 +38,12 @@
   }
   &__logo {
     color: $offwhite;
+  }
+  &__frontend,
+  &__backend,
+  &__database,
+  &__other {
+    margin: 3vh 0;
   }
   &__logo:hover {
     text-decoration: underline;
@@ -73,12 +79,18 @@
       height: 90vh;
     }
     &__logo--logo {
-      height: 70px;
-      width: 70px;
+      height: 60px;
+      width: 60px;
       padding: 1px 2%;
     }
     &__logo--name {
       font-size: 13px;
+    }
+    &__frontend,
+    &__backend,
+    &__database,
+    &__other {
+      margin: 0;
     }
   }
 }

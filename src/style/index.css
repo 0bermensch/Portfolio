@@ -423,7 +423,7 @@
   color: #f7e9e9;
   background-color: black;
   text-align: center;
-  font-size: 32px;
+  font-size: 30px;
 }
 
 .tech {
@@ -462,7 +462,7 @@
 }
 
 .tech__title {
-  font-size: 22px;
+  font-size: 18px;
 }
 
 .tech__info {
@@ -480,6 +480,10 @@
 
 .tech__logo {
   color: #f7e9e9;
+}
+
+.tech__frontend, .tech__backend, .tech__database, .tech__other {
+  margin: 3vh 0;
 }
 
 .tech__logo:hover {
@@ -520,12 +524,15 @@
     height: 90vh;
   }
   .tech__logo--logo {
-    height: 70px;
-    width: 70px;
+    height: 60px;
+    width: 60px;
     padding: 1px 2%;
   }
   .tech__logo--name {
     font-size: 13px;
+  }
+  .tech__frontend, .tech__backend, .tech__database, .tech__other {
+    margin: 0;
   }
 }
 
@@ -594,11 +601,62 @@
 
 .contact {
   height: 100vh;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .contact__title {
   color: white;
   font-family: "biorhyme-extrabold";
+}
+
+.contact__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact__form {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact__divider {
+  margin-top: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.contact__email--logo, .contact__phone--logo {
+  width: 80px;
+  height: 80px;
+}
+
+@media only screen and (min-width: 768px) {
+  .contact__container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .contact__divider {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 body {

@@ -1,7 +1,37 @@
 .contact {
   height: 100vh;
+  text-align: center;
+  align-items: center;
   &__title {
     color: white;
     font-family: "biorhyme-extrabold";
+  }
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
+  &__form {
+    align-items: center;
+  }
+  &__divider {
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: row;
+  }
+  &__email--logo,
+  &__phone--logo {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@include tablet {
+  .contact {
+    &__container {
+      flex-direction: row;
+    }
+    &__divider {
+      flex-direction: column;
+    }
   }
 }

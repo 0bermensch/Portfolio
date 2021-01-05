@@ -10,15 +10,16 @@ const Contacts = () => {
   return (
     <div className="contact">
       <div className="contact__title">Contacts</div>
-      <div className="contact__form">
-        <div className="contact__form--email">Email</div>
-        <input className="contact__form--emailinput"></input>
-        <div className="contact__form--subject">subject</div>
-        <input className="contact__form--subjectinput"></input>
-        <div className="contact__form--body">body:</div>
-        <input className="contact__form--bodyinput"></input>
-      </div>
       <div className="contact__container">
+        <div className="contact__form">
+          <div className="contact__form--email">Email</div>
+          <input className="contact__form--emailinput"></input>
+          <div className="contact__form--subject">subject</div>
+          <input className="contact__form--subjectinput"></input>
+          <div className="contact__form--body">body:</div>
+          <input className="contact__form--bodyinput"></input>
+        </div>
+
         <div className="contact__divider">
           <div className="contact__email">
             <a href="mailto:jason.lo.kc@gmail.com">
