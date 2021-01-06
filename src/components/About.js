@@ -4,10 +4,13 @@ import responsiveicon from "../Assets/about/icons8-responsive-64.png";
 import timeicon from "../Assets/about/icons8-time-limit-64.png";
 import improveicon from "../Assets/about/icons8-improvement-50.png";
 import Typist from "react-typist";
+import resume from "../Assets/JasonLoResume.pdf";
+
+import { Button } from "react-bootstrap";
 
 const About = () => {
   return (
-    <div className="about">
+    <div className="about" id="about">
       <div className="about__content">
         <h2 className="about__content--mission">About</h2>
         <Typist avgTypingDelay className="about__content--missiontext">
@@ -16,7 +19,18 @@ const About = () => {
           for the betterment of our society.
         </Typist>
       </div>
-      <div className="about__resume">Resume</div>
+      <div className="about__downloads">
+        <a href={resume} download>
+          <Button className="about__resume" variant="primary">
+            <div className="about__resume--text">Resume</div>
+          </Button>
+        </a>
+        <a>
+          <Button className="about__coverletter" variant="primary">
+            <div className="about__coverletter--text">Cover Letter</div>
+          </Button>
+        </a>
+      </div>
       <div className="about__valuetitle">MY CORE VALUES</div>
       <div className="about__values">
         <div className="about__values--1">

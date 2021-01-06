@@ -29,8 +29,11 @@
 }
 
 .navbar {
-  position: fixed;
+  position: fixed !important;
+  width: 100%;
   top: 0;
+  overflow: hidden;
+  z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -176,15 +179,28 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin-top: 30px;
-  margin-left: 5%;
+  margin-top: 70px;
+  text-align: center;
+  margin-left: 20%;
+  cursor: pointer;
+}
+
+.intro__toprojectscontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 30px;
 }
 
 .intro__toprojects--arrow {
-  height: 50px;
+  height: 30px;
   width: 20px;
   margin-top: 18px;
-  margin-right: 10%;
+  margin-left: 16px;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
@@ -219,24 +235,35 @@
         -ms-flex-direction: row;
             flex-direction: row;
     padding: 0;
+    width: 100%;
   }
   .intro__context {
-    padding: 70px 0 0 8%;
+    padding: 200px 0 0 8%;
     font-size: 25px;
-    width: 55%;
+    width: 70%;
   }
   .intro__context--title {
-    font-size: 18px;
-    padding: 3vh 0;
+    font-size: 1rem;
   }
   .intro__context--content {
     width: 80%;
     height: 8vh;
+    font-size: 1.8rem;
+  }
+  .intro__toprojects {
+    padding-top: 40vh;
+    margin: 0;
+  }
+  .intro__toprojectscontainer {
+    margin: 0;
   }
   .intro__toprojects--arrow {
-    height: 100px;
-    width: 50px;
-    margin-right: 5%;
+    height: 60px;
+    width: 40px;
+    margin: 0;
+    padding-bottom: 30px;
+    margin-left: 27px;
+    margin-top: 5px;
   }
   .intro__toprojects--text {
     margin-left: 1px;
@@ -257,18 +284,22 @@
 
 @media only screen and (min-width: 1440px) {
   .intro__context {
-    font-size: 40px;
+    padding-top: 300px;
   }
   .intro__context--title {
-    font-size: 30px;
+    font-size: 2rem;
+  }
+  .intro__context--content {
+    font-size: 2.8rem;
   }
   .intro__img {
-    height: 93vh;
+    height: 100vh;
   }
   .intro__toprojects--arrow {
-    height: 200px;
+    height: 130px;
     width: 100px;
     margin-right: 5%;
+    margin-top: 30px;
   }
   .intro__toprojects--text {
     font-size: 30px;
@@ -290,14 +321,28 @@
 .about__content--mission {
   font-family: "biorhyme-extrabold";
   text-decoration: underline;
-  font-size: 30px;
+  font-size: 2rem;
 }
 
 .about__content--missiontext {
   font-family: "biorhyme-bold";
-  font-size: 17px;
-  padding: 10px 10%;
-  height: 223px;
+  font-size: 1rem;
+  padding: 10px 8%;
+  height: auto;
+}
+
+.about__downloads {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 15px 0 20px;
 }
 
 .about__valuetitle {
@@ -327,6 +372,11 @@
   width: 50%;
 }
 
+.about__values--section {
+  width: 80%;
+  margin-right: 0 !important;
+}
+
 .about__values--icon {
   height: 50px;
   width: 50px;
@@ -338,7 +388,15 @@
   padding-bottom: 30px;
 }
 
+.about__values--details {
+  font-size: 10px;
+}
+
 @media only screen and (min-width: 768px) {
+  .about {
+    height: 100vh;
+    padding-top: 10px;
+  }
   .about__content {
     padding: 40px 5% 20px;
   }
@@ -347,9 +405,18 @@
   }
   .about__content--missiontext {
     font-size: 20px;
+    height: auto;
+  }
+  .about__coverletter, .about__resume {
+    width: 25vw;
+    height: 7vh;
+  }
+  .about__coverletter--text, .about__resume--text {
+    font-family: "biorhyme-bold";
+    font-size: 20px;
   }
   .about__valuetitle {
-    font-size: 30px;
+    font-size: 20px;
     padding-bottom: 20px;
   }
   .about__values {
@@ -668,5 +735,9 @@ body {
 
 .App {
   background-color: black;
+}
+
+.space {
+  height: 20vh;
 }
 /*# sourceMappingURL=index.css.map */

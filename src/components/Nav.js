@@ -16,28 +16,28 @@ const Navigation = () => {
     hamburgerNav = (
       <ul className="navbar__hamburgernav">
         <li>
-          <Link className="navbar__hamburgernav--item" to="/portfolio">
+          <Link className="navbar__hamburgernav--item" to="portfolio">
             Introduction
           </Link>
         </li>
         <li>
-          <Link className="navbar__hamburgernav--item" to="/about">
-            Tech Stack
+          <Link className="navbar__hamburgernav--item" to="about">
+            About
           </Link>
         </li>
         <li>
-          <Link className="navbar__hamburgernav--item" to="contacts">
+          <Link className="navbar__hamburgernav--item" to="tech">
+            Tech
+          </Link>
+        </li>
+        <li>
+          <Link className="navbar__hamburgernav--item" to="projects">
             Projects
           </Link>
         </li>
         <li>
           <Link className="navbar__hamburgernav--item" to="contacts">
-            Experience
-          </Link>
-        </li>
-        <li>
-          <Link className="navbar__hamburgernav--item" to="contacts">
-            Contacts
+            Contact
           </Link>
         </li>
       </ul>
@@ -74,7 +74,18 @@ const Navigation = () => {
             smooth={true}
             to="intro"
           >
-            Intro
+            Introduction
+          </Link>
+        </li>
+        <li>
+          <Link
+            className="navbar__navs--item"
+            activeClass="active"
+            spy={true}
+            smooth={true}
+            to="about"
+          >
+            About
           </Link>
         </li>
         <li>
@@ -99,17 +110,7 @@ const Navigation = () => {
             Projects
           </Link>
         </li>
-        <li>
-          <Link
-            className="navbar__navs--item"
-            activeClass="active"
-            spy={true}
-            smooth={true}
-            to="experience"
-          >
-            Experience
-          </Link>
-        </li>
+
         <li>
           <Link
             className="navbar__navs--item"

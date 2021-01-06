@@ -1,6 +1,9 @@
 .navbar {
-  position: fixed;
+  position: fixed !important;
+  width: 100%;
   top: 0;
+  overflow: hidden;
+  z-index: 1;
   display: flex;
   flex-direction: row;
   background-color: $offwhite;

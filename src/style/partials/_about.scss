@@ -10,14 +10,19 @@
   &__content--mission {
     font-family: "biorhyme-extrabold";
     text-decoration: underline;
-
-    font-size: 30px;
+    font-size: 2rem;
   }
   &__content--missiontext {
     font-family: "biorhyme-bold";
-    font-size: 17px;
-    padding: 10px 10%;
-    height: 223px;
+    font-size: 1rem;
+    padding: 10px 8%;
+    height: auto;
+  }
+  &__downloads {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 15px 0 20px;
   }
   &__valuetitle {
     text-align: center;
@@ -37,6 +42,10 @@
     text-align: center;
     width: 50%;
   }
+  &__values--section {
+    width: 80%;
+    margin-right: 0 !important;
+  }
   &__values--icon {
     height: 50px;
     width: 50px;
@@ -46,10 +55,15 @@
     font-family: "biorhyme";
     padding-bottom: 30px;
   }
+  &__values--details {
+    font-size: 10px;
+  }
 }
 
 @include tablet {
   .about {
+    height: 100vh;
+    padding-top: 10px;
     &__content {
       padding: 40px 5% 20px;
     }
@@ -58,9 +72,20 @@
     }
     &__content--missiontext {
       font-size: 20px;
+      height: auto;
+    }
+    &__coverletter,
+    &__resume {
+      width: 25vw;
+      height: 7vh;
+    }
+    &__coverletter--text,
+    &__resume--text {
+      font-family: "biorhyme-bold";
+      font-size: 20px;
     }
     &__valuetitle {
-      font-size: 30px;
+      font-size: 20px;
       padding-bottom: 20px;
     }
     &__values {

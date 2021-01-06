@@ -27,16 +27,19 @@ const Introduction = () => {
         <Typist className="intro__context--content" stdTypingDelay blink={true}>
           <b>'Full-Stack Web and Mobile Developer';</b>
         </Typist>
-        <Link className="intro__toprojects">
+      </div>
+      <Link className="intro__toprojects">
+        <div className="intro__toprojectscontainer">
+          <div className="intro__toprojects--text">projects</div>
           <img
             className="intro__toprojects--arrow"
             src={downarrow}
             alt="downarrow"
           />
-          <div className="intro__toprojects--text">projects</div>
-          <img className="intro__toprojects--img" src={mypic} alt="mypic" />
-        </Link>
-      </div>
+        </div>
+
+        <img className="intro__toprojects--img" src={mypic} alt="mypic" />
+      </Link>
       <img className="intro__img" src={mypic} alt="mypic" />
     </div>
   );
