@@ -41,10 +41,13 @@
   &__values--2 {
     text-align: center;
     width: 50%;
+    justify-content: space-evenly;
+    padding: 0 1vw;
   }
   &__values--section {
-    width: 80%;
+    width: auto;
     margin-right: 0 !important;
+    margin-bottom: 2vh;
   }
   &__values--icon {
     height: 50px;

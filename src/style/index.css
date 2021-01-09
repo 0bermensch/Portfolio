@@ -370,11 +370,16 @@
 .about__values--1, .about__values--2 {
   text-align: center;
   width: 50%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 0 1vw;
 }
 
 .about__values--section {
-  width: 80%;
+  width: auto;
   margin-right: 0 !important;
+  margin-bottom: 2vh;
 }
 
 .about__values--icon {
@@ -667,16 +672,18 @@
 }
 
 .contact {
-  height: 100vh;
+  height: 80vh;
   text-align: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: #f7e9e9;
 }
 
 .contact__title {
   color: white;
   font-family: "biorhyme-extrabold";
+  padding-bottom: 5vh;
 }
 
 .contact__container {
@@ -687,6 +694,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  font-family: "biorhyme-bold";
 }
 
 .contact__form {
@@ -704,6 +712,10 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  font-size: 12px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .contact__email--logo, .contact__phone--logo {

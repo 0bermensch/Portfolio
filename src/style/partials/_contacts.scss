@@ -1,14 +1,17 @@
 .contact {
-  height: 100vh;
+  height: 80vh;
   text-align: center;
   align-items: center;
+  color: $offwhite;
   &__title {
     color: white;
     font-family: "biorhyme-extrabold";
+    padding-bottom: 5vh;
   }
   &__container {
     display: flex;
     flex-direction: column;
+    font-family: "biorhyme-bold";
   }
   &__form {
     align-items: center;
@@ -17,6 +20,8 @@
     margin-top: 10vh;
     display: flex;
     flex-direction: row;
+    font-size: 12px;
+    justify-content: space-evenly;
   }
   &__email--logo,
   &__phone--logo {
