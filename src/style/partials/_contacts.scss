@@ -33,10 +33,11 @@
 @include tablet {
   .contact {
     &__container {
-      flex-direction: row;
+      flex-direction: column;
     }
     &__divider {
-      flex-direction: column;
+      flex-direction: row;
+      justify-content: space-evenly;
     }
   }
 }

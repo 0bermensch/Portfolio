@@ -143,9 +143,33 @@ const Projects = () => {
                 />
               </Carousel.Item>
             </Carousel>
-            <Button variant="light">
+            <Button variant="light" onClick={() => setModal(true)}>
               <div className="projects__project--modalbutton">Details</div>
             </Button>
+            <Modal
+              className="projects__modal"
+              size="lg"
+              show={modal}
+              onHide={() => setModal(false)}
+            >
+              <Modal.Header className="projects__modal--header">
+                {card.modal[0].title}
+              </Modal.Header>
+              <Modal.Body className="projects__modal--body">
+                <video className="projects__modal--video" controls>
+                  <source src={card.modal[2].video} type="video/mp4" />
+                </video>
+                <div className="projects__modal--tech">
+                  {card.modal[3].techstack}
+                </div>
+                <a
+                  className="projects__modal--github"
+                  href={card.modal[1].github}
+                >
+                  {card.modal[1].github}
+                </a>
+              </Modal.Body>
+            </Modal>
           </div>
         ))}
       </div>

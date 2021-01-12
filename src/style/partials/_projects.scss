@@ -24,6 +24,12 @@
     padding-bottom: 10px;
     border-radius: 20px;
   }
+  &__modal {
+    height: 90vh;
+  }
+  &__modal--video {
+    width: 100%;
+  }
 }
 
 @include tablet {
