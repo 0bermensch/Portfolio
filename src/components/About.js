@@ -3,8 +3,9 @@ import codeicon from "../Assets/about/icons8-code-64.png";
 import responsiveicon from "../Assets/about/icons8-responsive-64.png";
 import timeicon from "../Assets/about/icons8-time-limit-64.png";
 import improveicon from "../Assets/about/icons8-improvement-50.png";
-import Typist from "react-typist";
 import resume from "../Assets/JasonLoResume.pdf";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 import { Button } from "react-bootstrap";
 
@@ -13,11 +14,12 @@ const About = () => {
     <div className="about" id="about">
       <div className="about__content">
         <h2 className="about__content--mission">About</h2>
-        <Typist avgTypingDelay className="about__content--missiontext">
-          As a developer, it is my goal to help dreamers, entrepreneurs, and
-          businesses to bring their ideas into reality on web/mobile platforms
-          for the betterment of our society.
-        </Typist>
+        <div className="about__content--missiontext">
+          Hey there! I am Jason. I am a full-stack Web and Mobile Developer. I
+          am passionate about developing client facing applications, it is my
+          goal to help dreamers, entreprenuers, and businessesactualize their
+          ideas into an application.
+        </div>
       </div>
       <div className="about__downloads">
         <a href={resume} download>
@@ -34,7 +36,7 @@ const About = () => {
       <div className="about__valuetitle">MY CORE VALUES</div>
       <div className="about__values">
         <div className="about__values--1">
-          <div className="about__values--section">
+          <div data-aos="fade-up" className="about__values--section">
             <img
               className="about__values--icon"
               src={codeicon}
@@ -42,11 +44,10 @@ const About = () => {
             />
             <div className="about__values--value">Clean Code</div>
             <div className="about__values--details">
-              I ensure my code are elegantly written, easy to read, and
-              efficiently written
+              Clear and Well written code, easy to read, and easy to change
             </div>
           </div>
-          <div className="about__values--section">
+          <div data-aos="fade-up" className="about__values--section">
             <img
               className="about__values--icon"
               src={responsiveicon}
@@ -54,13 +55,12 @@ const About = () => {
             />
             <div className="about__values--value">Responsive</div>
             <div className="about__values--details">
-              The website will change fit for comprehensibility depending on the
-              user's device
+              The layout of the website will be responsive to the user's device
             </div>
           </div>
         </div>
         <div className="about__values--2">
-          <div className="about__values--section">
+          <div data-aos="fade-up" className="about__values--section">
             <img
               className="about__values--icon"
               src={timeicon}
@@ -71,7 +71,7 @@ const About = () => {
               Fast loading speed all across the website
             </div>
           </div>
-          <div className="about__values--section">
+          <div data-aos="fade-up" className="about__values--section">
             <img
               className="about__values--icon"
               src={improveicon}
@@ -79,8 +79,8 @@ const About = () => {
             />
             <div className="about__values--value">Improvment</div>
             <div className="about__values--details">
-              Technologies are ever evolving, as a developer I strive to
-              constantly improve to stay on top of the change{" "}
+              I strive to constantly improve, learn new technologies, and stay
+              on top of industry standards.
             </div>
           </div>
         </div>

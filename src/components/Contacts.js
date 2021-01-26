@@ -4,21 +4,63 @@ import githublogo from "../Assets/icons/github-6-128.png";
 import linkedinlogo from "../Assets/icons/linkedin.png";
 import emaillogo from "../Assets/icons/email.svg";
 import phonelogo from "../Assets/icons/telephone.svg";
-import resume from "../Assets/JasonLoResume.pdf";
+import emailjs from "emailjs-com";
 
 const Contacts = () => {
+  function sendEmail(e) {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_0q05cud",
+        "template_ai0pbvy",
+        e.target,
+        "user_fVA9crxMYZesVPmSxOQcg"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
+  }
+
   return (
     <div className="contact">
       <div className="contact__title">Contacts</div>
       <div className="contact__container">
-        <div className="contact__form">
-          <div className="contact__form--email">Email</div>
-          <input className="contact__form--emailinput"></input>
-          <div className="contact__form--subject">subject</div>
-          <input className="contact__form--subjectinput"></input>
-          <div className="contact__form--body">body:</div>
-          <input className="contact__form--bodyinput"></input>
-        </div>
+        <form className="contact__form" onSubmit={sendEmail}>
+          <input
+            type="text"
+            name="name"
+            placeholder="Name"
+            className="contact__form--nameinput"
+          ></input>
+
+          <input
+            type="email"
+            name="email"
+            placeholder="Email"
+            className="contact__form--emailinput"
+          ></input>
+
+          <input
+            type="text"
+            name="subject"
+            placeholder="subject"
+            className="contact__form--subjectinput"
+          ></input>
+
+          <input
+            type="text"
+            name="message"
+            placeholder="body"
+            className="contact__form--bodyinput"
+          ></input>
+        </form>
 
         <div className="contact__divider">
           <div className="contact__email">

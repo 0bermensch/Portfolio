@@ -432,7 +432,7 @@
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
-    padding-bottom: 0;
+    padding: 30px 5% 0;
   }
   .about__values--1 {
     display: -webkit-box;
@@ -444,6 +444,7 @@
             flex-direction: row;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    width: 50%;
   }
   .about__values--2 {
     display: -webkit-box;
@@ -455,6 +456,13 @@
             flex-direction: row;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    width: 50%;
+  }
+  .about__values--section {
+    width: 50%;
+  }
+  .about__values--details {
+    font-size: 13px;
   }
   .about__values--icon {
     height: 80px;
@@ -482,6 +490,9 @@
   }
   .about__values--value {
     font-size: 30px;
+  }
+  .about__values--details {
+    font-size: 18px;
   }
 }
 
@@ -709,6 +720,17 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact__form--emailinput, .contact__form--nameinput, .contact__form--subjectinput {
+  margin-bottom: 10px;
 }
 
 .contact__divider {
@@ -731,6 +753,10 @@
   height: 80px;
 }
 
+.contact__form--bodyinput {
+  height: 100px;
+}
+
 @media only screen and (min-width: 768px) {
   .contact__container {
     -webkit-box-orient: vertical;
@@ -746,6 +772,36 @@
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
+  }
+  .contact__form {
+    width: 70%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .contact__form--emailinput, .contact__form--nameinput, .contact__form--subjectinput, .contact__form--bodyinput {
+    width: 70%;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .contact__form {
+    width: 60%;
+  }
+  .contact__form--emailinput, .contact__form--nameinput, .contact__form--subjectinput {
+    height: 50px;
+    text-align: start;
+  }
+  .contact__form--bodyinput {
+    height: 150px;
+    text-align: start;
+  }
+  .contact__email--logo, .contact__phone--logo {
+    width: 120px;
+    height: 120px;
+  }
+  .contact__email--email, .contact__phone--number {
+    font-size: 20px;
   }
 }
 
