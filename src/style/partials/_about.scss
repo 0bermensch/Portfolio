@@ -1,19 +1,18 @@
 .about {
   background-color: black;
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
+  border-radius: 20px;
   color: $offwhite;
+  padding-top: 10px;
   &__content {
     text-align: center;
     padding-top: 20px;
   }
   &__content--mission {
-    font-family: "biorhyme-extrabold";
-    text-decoration: underline;
+    font-family: "jost-b";
     font-size: 2rem;
   }
   &__content--missiontext {
-    font-family: "biorhyme-bold";
+    font-family: "jost-m";
     font-size: 1rem;
     padding: 10px 8%;
     height: auto;
@@ -24,12 +23,16 @@
     justify-content: space-evenly;
     margin: 15px 0 20px;
   }
+  &__coverletter--text,
+  &__resume--text {
+    font-family: "jost-m";
+    font-size: 12px;
+  }
   &__valuetitle {
     text-align: center;
     padding: 20px 0 0;
-    font-family: "biorhyme-extrabold";
-    text-decoration: underline;
-    font-size: 20px;
+    font-family: "jost-b";
+    font-size: 32px;
   }
   &__values {
     display: flex;
@@ -55,10 +58,11 @@
   }
   &__values--value {
     text-align: center;
-    font-family: "biorhyme";
+    font-family: "jost-m";
     padding-bottom: 30px;
   }
   &__values--details {
+    font-family: "jost-r";
     font-size: 10px;
   }
 }
@@ -82,11 +86,7 @@
       width: 25vw;
       height: 7vh;
     }
-    &__coverletter--text,
-    &__resume--text {
-      font-family: "biorhyme-bold";
-      font-size: 20px;
-    }
+
     &__valuetitle {
       font-size: 20px;
       padding-bottom: 20px;

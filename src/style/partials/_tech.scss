@@ -1,20 +1,21 @@
 .techcontainer {
-  background-color: black;
+  background-color: rgb(248, 248, 248);
   height: 100vh;
+  padding-top: 40px;
 }
 .techtitle {
-  font-family: "biorhyme-extrabold";
-  color: $offwhite;
-  background-color: black;
+  font-family: "jost-b";
+  color: black;
+
   text-align: center;
-  font-size: 30px;
+  font-size: 32px;
 }
 .tech {
-  background-color: black;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
   display: flex;
   flex-direction: row;
+  color: black;
   &__pic {
     display: none;
   }
@@ -23,13 +24,15 @@
     flex-direction: column;
     justify-content: space-evenly;
     text-align: center;
-    font-family: "biorhyme-bold";
+    font-family: "jost-m";
     color: $offwhite;
     width: 100%;
     padding: 10px 10%;
   }
   &__title {
     font-size: 18px;
+    color: black;
+    font-family: "jost-m";
   }
   &__info {
     display: flex;
@@ -48,6 +51,7 @@
   &__logo:hover {
     text-decoration: underline;
     color: grey;
+    font-weight: bold;
   }
 
   &__logo--logo {
@@ -57,6 +61,7 @@
   }
   &__logo--name {
     font-size: 10px;
+    color: black;
   }
 }
 

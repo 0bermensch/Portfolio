@@ -29,7 +29,7 @@ const Contacts = () => {
   }
 
   return (
-    <div className="contact">
+    <div id="contacts" className="contact">
       <div className="contact__title">Contacts</div>
       <div className="contact__container">
         <form className="contact__form" onSubmit={sendEmail}>

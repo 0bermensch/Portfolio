@@ -28,6 +28,21 @@
   src: url(../Assets/biorhyme/FiraCode-Medium.ttf);
 }
 
+@font-face {
+  font-family: "jost-m";
+  src: url(../Assets/fonts/Jost-Medium.ttf);
+}
+
+@font-face {
+  font-family: "jost-r";
+  src: url(../Assets/fonts/Jost-Regular.ttf);
+}
+
+@font-face {
+  font-family: "jost-b";
+  src: url(../Assets/fonts/Jost-Bold.ttf);
+}
+
 .navbar {
   position: fixed !important;
   width: 100%;
@@ -41,7 +56,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  background-color: #f7e9e9;
+  background-color: white;
 }
 
 .navbar__socials {
@@ -59,6 +74,10 @@
   height: 25px;
   width: 25px;
   margin-right: 10px;
+}
+
+.navbar__hamburger {
+  fill: white;
 }
 
 .navbar__hamburgernav {
@@ -82,7 +101,7 @@
           justify-content: space-between;
   padding: 70px 19.43% 100px;
   margin: 0;
-  font-family: "biorhyme";
+  font-family: "jost-m";
 }
 
 .navbar__hamburgernav--item {
@@ -93,9 +112,13 @@
 
 .navbar__navs {
   display: none;
+  color: white;
 }
 
 @media only screen and (min-width: 768px) {
+  .navbar {
+    background-color: black;
+  }
   .navbar__hamburger {
     display: none;
   }
@@ -113,12 +136,12 @@
             flex-direction: row;
     text-decoration: none;
     list-style-type: none;
-    font-family: "biorhyme";
+    font-family: "jost-m";
     margin-right: 2%;
   }
   .navbar__navs--item {
     margin-left: 2rem;
-    color: black;
+    color: white;
     font-size: 12px;
   }
   .navbar__navs--item:hover {
@@ -279,6 +302,7 @@
     height: 100vh;
     width: 45%;
     border-radius: 0;
+    opacity: 80%;
   }
 }
 
@@ -308,9 +332,9 @@
 
 .about {
   background-color: black;
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
+  border-radius: 20px;
   color: #f7e9e9;
+  padding-top: 10px;
 }
 
 .about__content {
@@ -319,13 +343,12 @@
 }
 
 .about__content--mission {
-  font-family: "biorhyme-extrabold";
-  text-decoration: underline;
+  font-family: "jost-b";
   font-size: 2rem;
 }
 
 .about__content--missiontext {
-  font-family: "biorhyme-bold";
+  font-family: "jost-m";
   font-size: 1rem;
   padding: 10px 8%;
   height: auto;
@@ -345,12 +368,16 @@
   margin: 15px 0 20px;
 }
 
+.about__coverletter--text, .about__resume--text {
+  font-family: "jost-m";
+  font-size: 12px;
+}
+
 .about__valuetitle {
   text-align: center;
   padding: 20px 0 0;
-  font-family: "biorhyme-extrabold";
-  text-decoration: underline;
-  font-size: 20px;
+  font-family: "jost-b";
+  font-size: 32px;
 }
 
 .about__values {
@@ -389,11 +416,12 @@
 
 .about__values--value {
   text-align: center;
-  font-family: "biorhyme";
+  font-family: "jost-m";
   padding-bottom: 30px;
 }
 
 .about__values--details {
+  font-family: "jost-r";
   font-size: 10px;
 }
 
@@ -415,10 +443,6 @@
   .about__coverletter, .about__resume {
     width: 25vw;
     height: 7vh;
-  }
-  .about__coverletter--text, .about__resume--text {
-    font-family: "biorhyme-bold";
-    font-size: 20px;
   }
   .about__valuetitle {
     font-size: 20px;
@@ -497,20 +521,19 @@
 }
 
 .techcontainer {
-  background-color: black;
+  background-color: #f8f8f8;
   height: 100vh;
+  padding-top: 40px;
 }
 
 .techtitle {
-  font-family: "biorhyme-extrabold";
-  color: #f7e9e9;
-  background-color: black;
+  font-family: "jost-b";
+  color: black;
   text-align: center;
-  font-size: 30px;
+  font-size: 32px;
 }
 
 .tech {
-  background-color: black;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
   display: -webkit-box;
@@ -520,6 +543,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  color: black;
 }
 
 .tech__pic {
@@ -538,7 +562,7 @@
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   text-align: center;
-  font-family: "biorhyme-bold";
+  font-family: "jost-m";
   color: #f7e9e9;
   width: 100%;
   padding: 10px 10%;
@@ -546,6 +570,8 @@
 
 .tech__title {
   font-size: 18px;
+  color: black;
+  font-family: "jost-m";
 }
 
 .tech__info {
@@ -572,6 +598,7 @@
 .tech__logo:hover {
   text-decoration: underline;
   color: grey;
+  font-weight: bold;
 }
 
 .tech__logo--logo {
@@ -582,6 +609,7 @@
 
 .tech__logo--name {
   font-size: 10px;
+  color: black;
 }
 
 @media only screen and (min-width: 768px) {
@@ -633,11 +661,12 @@
 }
 
 .projectitle {
-  color: #f7e9e9;
+  color: black;
   text-align: center;
-  font-family: "biorhyme-extrabold";
+  font-family: "jost-b";
   font-size: 32px;
   padding-bottom: 20px;
+  padding-top: 40px;
 }
 
 .projects {
@@ -700,8 +729,9 @@
 }
 
 .contact__title {
-  color: white;
-  font-family: "biorhyme-extrabold";
+  color: black;
+  font-family: "jost-b";
+  font-size: 32px;
   padding-bottom: 5vh;
 }
 
@@ -813,7 +843,7 @@ body {
 }
 
 .App {
-  background-color: black;
+  background-color: #f8f8f8;
 }
 
 .space {

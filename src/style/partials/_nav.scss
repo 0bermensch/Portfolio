@@ -6,7 +6,7 @@
   z-index: 1;
   display: flex;
   flex-direction: row;
-  background-color: $offwhite;
+  background-color: white;
   &__socials {
     display: flex;
     flex-direction: row;
@@ -16,6 +16,9 @@
     height: 25px;
     width: 25px;
     margin-right: 10px;
+  }
+  &__hamburger {
+    fill: white;
   }
   &__hamburgernav {
     background-color: white;
@@ -31,7 +34,7 @@
     justify-content: space-between;
     padding: 70px 19.43% 100px;
     margin: 0;
-    font-family: "biorhyme";
+    font-family: "jost-m";
   }
   &__hamburgernav--item {
     text-decoration: none;
@@ -41,11 +44,13 @@
 
   &__navs {
     display: none;
+    color: white;
   }
 }
 
 @include tablet {
   .navbar {
+    background-color: black;
     &__hamburger {
       display: none;
     }
@@ -58,12 +63,12 @@
       flex-direction: row;
       text-decoration: none;
       list-style-type: none;
-      font-family: "biorhyme";
+      font-family: "jost-m";
       margin-right: 2%;
     }
     &__navs--item {
       margin-left: 2rem;
-      color: black;
+      color: white;
       font-size: 12px;
     }
     &__navs--item:hover {

@@ -114,7 +114,7 @@ const Projects = () => {
   const [modal, setModal] = useState(false);
 
   return (
-    <div className="projectcontainer">
+    <div className="projectcontainer" id="projects">
       <div className="projectitle">Projects</div>
       <div className="projects">
         {projectinfo.map((card) => (

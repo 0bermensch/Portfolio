@@ -13,7 +13,7 @@ const About = () => {
   return (
     <div className="about" id="about">
       <div className="about__content">
-        <h2 className="about__content--mission">About</h2>
+        <h2 className="about__content--mission">Who am I?</h2>
         <div className="about__content--missiontext">
           Hey there! I am Jason. I am a full-stack Web and Mobile Developer. I
           am passionate about developing client facing applications, it is my
@@ -33,7 +33,7 @@ const About = () => {
           </Button>
         </a>
       </div>
-      <div className="about__valuetitle">MY CORE VALUES</div>
+      <div className="about__valuetitle">My Core Values</div>
       <div className="about__values">
         <div className="about__values--1">
           <div data-aos="fade-up" className="about__values--section">
