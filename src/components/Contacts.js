@@ -38,28 +38,29 @@ const Contacts = () => {
             name="name"
             placeholder="Name"
             className="contact__form--nameinput"
-          ></input>
+          />
 
           <input
             type="email"
             name="email"
             placeholder="Email"
             className="contact__form--emailinput"
-          ></input>
+          />
 
           <input
             type="text"
             name="subject"
             placeholder="subject"
             className="contact__form--subjectinput"
-          ></input>
+          />
 
           <input
             type="text"
             name="message"
             placeholder="body"
             className="contact__form--bodyinput"
-          ></input>
+          />
+          <input type="submit" className="contact__form--submit" value="send" />
         </form>
 
         <div className="contact__divider">

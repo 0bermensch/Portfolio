@@ -23,12 +23,12 @@ const About = () => {
       </div>
       <div className="about__downloads">
         <a href={resume} download>
-          <Button className="about__resume" variant="primary">
+          <Button className="about__resume" variant="dark">
             <div className="about__resume--text">Resume</div>
           </Button>
         </a>
         <a>
-          <Button className="about__coverletter" variant="primary">
+          <Button className="about__coverletter" variant="dark">
             <div className="about__coverletter--text">Cover Letter</div>
           </Button>
         </a>

@@ -261,7 +261,7 @@
     width: 100%;
   }
   .intro__context {
-    padding: 200px 0 0 8%;
+    padding: 170px 0 0 12%;
     font-size: 25px;
     width: 70%;
   }
@@ -302,7 +302,7 @@
     height: 100vh;
     width: 45%;
     border-radius: 0;
-    opacity: 80%;
+    opacity: 90%;
   }
 }
 
@@ -331,9 +331,9 @@
 }
 
 .about {
-  background-color: black;
+  background-color: #f8f8f8;
   border-radius: 20px;
-  color: #f7e9e9;
+  color: #353535;
   padding-top: 10px;
 }
 
@@ -421,14 +421,15 @@
 }
 
 .about__values--details {
-  font-family: "jost-r";
+  font-family: "jost-m";
   font-size: 10px;
 }
 
 @media only screen and (min-width: 768px) {
   .about {
-    height: 100vh;
+    height: 96vh;
     padding-top: 10px;
+    margin: 0 8%;
   }
   .about__content {
     padding: 40px 5% 20px;
@@ -440,13 +441,21 @@
     font-size: 20px;
     height: auto;
   }
+  .about__downloads {
+    width: auto;
+    padding: 0 20%;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    text-align: center;
+  }
   .about__coverletter, .about__resume {
-    width: 25vw;
+    width: 15vw;
     height: 7vh;
   }
   .about__valuetitle {
-    font-size: 20px;
-    padding-bottom: 20px;
+    font-size: 32px;
+    padding: 10px 0;
   }
   .about__values {
     -webkit-box-orient: horizontal;
@@ -492,6 +501,13 @@
     height: 80px;
     width: 80px;
   }
+  .about__values--value {
+    font-size: 22px;
+    padding-bottom: 10px;
+  }
+  .about__values--details {
+    font-size: 14px;
+  }
 }
 
 @media only screen and (min-width: 1440px) {
@@ -534,8 +550,7 @@
 }
 
 .tech {
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
+  border-radius: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -617,26 +632,26 @@
     font-size: 50px;
   }
   .tech {
-    border-top-left-radius: 80px;
-    border-top-right-radius: 80px;
+    margin: 0 8%;
   }
   .tech__pic {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     width: 45%;
-    height: 90vh;
-    border-top-left-radius: 80px;
+    height: 80vh;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
     -o-object-fit: cover;
        object-fit: cover;
   }
   .tech__content {
     padding: 0;
-    height: 90vh;
+    height: 80vh;
   }
   .tech__logo--logo {
-    height: 60px;
-    width: 60px;
+    height: 50px;
+    width: 50px;
     padding: 1px 2%;
   }
   .tech__logo--name {
@@ -847,6 +862,6 @@ body {
 }
 
 .space {
-  height: 20vh;
+  height: 10vh;
 }
 /*# sourceMappingURL=index.css.map */
