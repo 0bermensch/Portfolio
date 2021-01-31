@@ -2,7 +2,7 @@
   height: 80vh;
   text-align: center;
   align-items: center;
-  color: $offwhite;
+  color: black;
   &__title {
     color: black;
     font-family: "jost-b";
@@ -12,7 +12,7 @@
   &__container {
     display: flex;
     flex-direction: column;
-    font-family: "biorhyme-bold";
+    font-family: "jost-b";
   }
   &__form {
     align-items: center;
@@ -20,12 +20,11 @@
     flex-direction: column;
   }
   &__form--emailinput,
-  &__form--nameinput,
-  &__form--subjectinput {
+  &__form--nameinput {
     margin-bottom: 10px;
   }
   &__divider {
-    margin-top: 10vh;
+    margin-top: 5vh;
     display: flex;
     flex-direction: row;
     font-size: 12px;
@@ -38,33 +37,60 @@
   }
   &__form--bodyinput {
     height: 100px;
+    margin-bottom: 20px;
   }
 }
 
 @include tablet {
   .contact {
+    height: 75vh;
     &__container {
-      flex-direction: column;
+      flex-direction: row-reverse;
+      padding-top: 30px;
     }
     &__divider {
-      flex-direction: row;
-      justify-content: space-evenly;
+      flex-direction: column;
+      margin-top: 0;
+      margin-right: 10%;
+      padding-bottom: 50px;
     }
     &__form {
-      width: 70%;
+      width: 60%;
       align-self: center;
     }
     &__form--emailinput,
     &__form--nameinput,
-    &__form--subjectinput,
     &__form--bodyinput {
       width: 70%;
+    }
+    &__form--emailinput,
+    &__form--nameinput {
+      height: 50px;
+    }
+    &__form--bodyinput {
+      height: 100px;
+      margin-bottom: 30px;
+    }
+    &__form--submit {
+      width: 20%;
+      font-size: 30px;
+    }
+    &__email,
+    &__phone {
+      display: flex;
+      flex-direction: row;
+    }
+    &__email--email,
+    &__phone--number {
+      padding-top: 30px;
+      padding-left: 2%;
     }
   }
 }
 
 @include desktop {
   .contact {
+    height: 70vh;
     &__form {
       width: 60%;
     }

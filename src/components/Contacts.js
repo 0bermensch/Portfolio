@@ -49,18 +49,17 @@ const Contacts = () => {
 
           <input
             type="text"
-            name="subject"
-            placeholder="subject"
-            className="contact__form--subjectinput"
-          />
-
-          <input
-            type="text"
             name="message"
             placeholder="body"
             className="contact__form--bodyinput"
           />
-          <input type="submit" className="contact__form--submit" value="send" />
+          <Button
+            className="contact__form--submit"
+            type="submit"
+            variant="dark"
+          >
+            <div className="">Send</div>
+          </Button>
         </form>
 
         <div className="contact__divider">

@@ -427,7 +427,7 @@
 
 @media only screen and (min-width: 768px) {
   .about {
-    height: 96vh;
+    height: 100vh;
     padding-top: 10px;
     margin: 0 8%;
   }
@@ -667,7 +667,7 @@
     font-size: 70px;
   }
   .tech__title {
-    font-size: 50px;
+    font-size: 36px;
   }
   .tech__logo--logo {
     height: 90px;
@@ -676,61 +676,85 @@
 }
 
 .projectitle {
-  color: black;
+  color: #f7e9e9;
   text-align: center;
   font-family: "jost-b";
   font-size: 32px;
-  padding-bottom: 20px;
+  margin-bottom: 50px;
   padding-top: 40px;
 }
 
-.projects {
+.project {
   text-align: center;
   background-color: black;
 }
 
-.projects__project {
-  height: 100vh;
-  padding-bottom: 20px;
+.project__card {
+  height: 70vh;
 }
 
-.projects__project--name {
-  color: white;
-  font-family: "biorhyme-bold";
+.project__card--title {
+  font-family: "jost-b";
   font-size: 20px;
-  padding-bottom: 10px;
+  color: #f7e9e9;
 }
 
-.projects__project--image {
-  height: 50vh;
+.project__card--mainpic {
+  width: 75%;
+}
+
+.project__card--mainpicphone {
+  height: 50%;
+  width: 40%;
+}
+
+.project__card--detailb, .project__card--demob {
+  margin-top: 0.5rem;
   width: 60%;
-  padding-bottom: 10px;
-  border-radius: 20px;
 }
 
-.projects__modal {
-  height: 90vh;
-}
-
-.projects__modal--video {
-  width: 100%;
+.project__card--buttontext {
+  color: white;
+  text-decoration: none;
 }
 
 @media only screen and (min-width: 768px) {
   .projectitle {
     font-size: 50px;
   }
-  .projects {
+  .project__card {
+    height: 80vh;
+  }
+  .project__container {
+    padding: 0 15%;
     display: -ms-grid;
     display: grid;
-    max-width: 100%;
-    padding: 0 10%;
-    -ms-grid-columns: 40% 40%;
-        grid-template-columns: 40% 40%;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
     -ms-grid-rows: auto;
         grid-template-rows: auto;
-    grid-column-gap: 5%;
-    grid-row-gap: 5%;
+    grid-column-gap: 10%;
+    grid-row-gap: 6rem;
+  }
+  .project__card--mainpic {
+    height: 18rem;
+  }
+  .project__card--button {
+    width: 65%;
+  }
+  .project__card--detailb, .project__card--demob {
+    margin-top: 0.5rem;
+    width: 75%;
+    height: 35px;
+  }
+  .project__card--title {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .project__card--mainpic {
+    height: 22rem;
   }
 }
 
@@ -740,7 +764,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #f7e9e9;
+  color: black;
 }
 
 .contact__title {
@@ -758,7 +782,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  font-family: "biorhyme-bold";
+  font-family: "jost-b";
 }
 
 .contact__form {
@@ -774,12 +798,12 @@
           flex-direction: column;
 }
 
-.contact__form--emailinput, .contact__form--nameinput, .contact__form--subjectinput {
+.contact__form--emailinput, .contact__form--nameinput {
   margin-bottom: 10px;
 }
 
 .contact__divider {
-  margin-top: 10vh;
+  margin-top: 5vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -800,36 +824,68 @@
 
 .contact__form--bodyinput {
   height: 100px;
+  margin-bottom: 20px;
 }
 
 @media only screen and (min-width: 768px) {
+  .contact {
+    height: 75vh;
+  }
   .contact__container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    padding-top: 30px;
+  }
+  .contact__divider {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-  }
-  .contact__divider {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    margin-top: 0;
+    margin-right: 10%;
+    padding-bottom: 50px;
   }
   .contact__form {
-    width: 70%;
+    width: 60%;
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
   }
-  .contact__form--emailinput, .contact__form--nameinput, .contact__form--subjectinput, .contact__form--bodyinput {
+  .contact__form--emailinput, .contact__form--nameinput, .contact__form--bodyinput {
     width: 70%;
+  }
+  .contact__form--emailinput, .contact__form--nameinput {
+    height: 50px;
+  }
+  .contact__form--bodyinput {
+    height: 100px;
+    margin-bottom: 30px;
+  }
+  .contact__form--submit {
+    width: 20%;
+    font-size: 30px;
+  }
+  .contact__email, .contact__phone {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .contact__email--email, .contact__phone--number {
+    padding-top: 30px;
+    padding-left: 2%;
   }
 }
 
 @media only screen and (min-width: 1440px) {
+  .contact {
+    height: 70vh;
+  }
   .contact__form {
     width: 60%;
   }
