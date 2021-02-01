@@ -33,6 +33,20 @@
     color: white;
     text-decoration: none;
   }
+  &__modal--header {
+    font-family: "jost-b";
+  }
+  &__modal--techstack,
+  &__modal--github {
+    font-family: "jost-m";
+    color: black;
+    border-top: 1px dashed black;
+    text-decoration: none;
+  }
+  &__modal--video {
+    height: auto !important;
+    width: 100% !important;
+  }
 }
 
 @include tablet {

@@ -711,6 +711,22 @@
   text-decoration: none;
 }
 
+.project__modal--header {
+  font-family: "jost-b";
+}
+
+.project__modal--techstack, .project__modal--github {
+  font-family: "jost-m";
+  color: black;
+  border-top: 1px dashed black;
+  text-decoration: none;
+}
+
+.project__modal--video {
+  height: auto !important;
+  width: 100% !important;
+}
+
 @media only screen and (min-width: 768px) {
   .projectitle {
     font-size: 50px;
