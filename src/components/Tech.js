@@ -14,7 +14,7 @@ import mysqllogo from "../Assets/icons/mysql-original.svg";
 import graphqllogo from "../Assets/icons/graphql-icon.svg";
 import mongodblogo from "../Assets/icons/mongodb-original.svg";
 import postgresqllogo from "../Assets/icons/postgresql-original.svg";
-import herokulogo from "../Assets/icons/heroku-original.svg";
+
 import npmlogo from "../Assets/icons/npm-original-wordmark.svg";
 import pic from "../Assets/pexels-negative-space-169573.jpg";
 import githublogo from "../Assets/icons/github-11-128.png";

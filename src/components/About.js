@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import codeicon from "../Assets/about/icons8-code-64.png";
 import responsiveicon from "../Assets/about/icons8-responsive-64.png";
 import timeicon from "../Assets/about/icons8-time-limit-64.png";
@@ -11,6 +11,10 @@ import "aos/dist/aos.css";
 import { Button } from "react-bootstrap";
 
 const About = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
+
   return (
     <div className="about" id="about">
       <div className="about__content">

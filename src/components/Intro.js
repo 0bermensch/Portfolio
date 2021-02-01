@@ -4,10 +4,6 @@ import downarrow from "../Assets/intro/white-arrow-png-41942.png";
 import mypic from "../Assets/intro/Jason_Lo_WD.jpg";
 import { Link } from "react-scroll";
 
-/*Typist stdTypingDelay blink={true}*/
-
-var name = "jason";
-
 const Introduction = () => {
   return (
     <div className="intro" id="intro">
