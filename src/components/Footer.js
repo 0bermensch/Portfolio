@@ -4,6 +4,7 @@ const Footer = () => {
   return (
     <div className="footer">
       <div>Jason Lo</div>
+      <div>© Vancouver, BC 2021</div>
     </div>
   );
 };

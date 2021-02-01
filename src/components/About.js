@@ -4,6 +4,7 @@ import responsiveicon from "../Assets/about/icons8-responsive-64.png";
 import timeicon from "../Assets/about/icons8-time-limit-64.png";
 import improveicon from "../Assets/about/icons8-improvement-50.png";
 import resume from "../Assets/JasonLoResume.pdf";
+import coverletter from "../Assets/CoverLetter.pdf";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -27,7 +28,7 @@ const About = () => {
             <div className="about__resume--text">Resume</div>
           </Button>
         </a>
-        <a>
+        <a href={coverletter} download>
           <Button className="about__coverletter" variant="dark">
             <div className="about__coverletter--text">Cover Letter</div>
           </Button>

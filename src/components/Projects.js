@@ -8,7 +8,7 @@ import Project7 from "./Projects/Project7";
 
 const Projects = () => {
   return (
-    <div className="project">
+    <div className="project" id="projects">
       <div className="projectitle">Projects</div>
       <div className="project__container">
         <Project7 />

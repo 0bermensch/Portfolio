@@ -69,7 +69,6 @@
 
 @include tablet {
   .about {
-    height: 100vh;
     padding-top: 10px;
     margin: 0 8%;
     &__content {
@@ -126,11 +125,11 @@
       width: 80px;
     }
     &__values--value {
-      font-size: 22px;
+      font-size: 2rem;
       padding-bottom: 10px;
     }
     &__values--details {
-      font-size: 14px;
+      font-size: 1rem;
     }
   }
 }
@@ -153,12 +152,6 @@
     &__values--icon {
       height: 140px;
       width: 140px;
-    }
-    &__values--value {
-      font-size: 30px;
-    }
-    &__values--details {
-      font-size: 18px;
     }
   }
 }

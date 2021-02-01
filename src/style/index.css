@@ -142,7 +142,7 @@
   .navbar__navs--item {
     margin-left: 2rem;
     color: white;
-    font-size: 12px;
+    font-size: 1rem;
   }
   .navbar__navs--item:hover {
     color: violet;
@@ -427,7 +427,6 @@
 
 @media only screen and (min-width: 768px) {
   .about {
-    height: 100vh;
     padding-top: 10px;
     margin: 0 8%;
   }
@@ -502,11 +501,11 @@
     width: 80px;
   }
   .about__values--value {
-    font-size: 22px;
+    font-size: 2rem;
     padding-bottom: 10px;
   }
   .about__values--details {
-    font-size: 14px;
+    font-size: 1rem;
   }
 }
 
@@ -527,12 +526,6 @@
   .about__values--icon {
     height: 140px;
     width: 140px;
-  }
-  .about__values--value {
-    font-size: 30px;
-  }
-  .about__values--details {
-    font-size: 18px;
   }
 }
 
@@ -729,8 +722,8 @@
     padding: 0 15%;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 50% 50%;
-        grid-template-columns: 50% 50%;
+    -ms-grid-columns: 45% 45%;
+        grid-template-columns: 45% 45%;
     -ms-grid-rows: auto;
         grid-template-rows: auto;
     grid-column-gap: 10%;
@@ -904,6 +897,15 @@
   .contact__email--email, .contact__phone--number {
     font-size: 20px;
   }
+}
+
+.footer {
+  background-color: black;
+  font-family: "jost-b";
+  color: #f7e9e9;
+  text-align: center;
+  height: 12vh;
+  font-size: 1.5rem;
 }
 
 body {
