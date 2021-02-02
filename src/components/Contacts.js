@@ -1,7 +1,5 @@
 import React from "react";
 import { Button } from "react-bootstrap";
-import githublogo from "../Assets/icons/github-6-128.png";
-import linkedinlogo from "../Assets/icons/linkedin.png";
 import emaillogo from "../Assets/icons/email.svg";
 import phonelogo from "../Assets/icons/telephone.svg";
 import emailjs from "emailjs-com";

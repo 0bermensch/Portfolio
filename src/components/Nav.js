@@ -58,11 +58,13 @@ const Navigation = () => {
           alt="linkedinlogo"
         />
       </div>
-      <div
-        onClick={() => toggle(navIcon)}
-        onClick={() => setOpenNavMenu(!openNavMenu)}
-      >
-        <img className="navbar__hamburger" src={hamburger} alt="hamburger" />
+      <div onClick={() => toggle(navIcon)}>
+        <img
+          className="navbar__hamburger"
+          onClick={() => setOpenNavMenu(!openNavMenu)}
+          src={hamburger}
+          alt="hamburger"
+        />
       </div>
       {hamburgerNav}
       <ul className="navbar__navs">
