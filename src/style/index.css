@@ -68,6 +68,7 @@
       -ms-flex-direction: row;
           flex-direction: row;
   margin-left: 2%;
+  width: 30%;
 }
 
 .navbar__socials--gh, .navbar__socials--ld {
