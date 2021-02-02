@@ -48,12 +48,12 @@ const Navigation = () => {
     <div className="navbar">
       <div className="navbar__socials">
         <img
-          className="navbar__socials--logo"
+          className="navbar__socials--gh"
           src={githublogo}
           alt="githublogo"
         />
         <img
-          className="navbar__socials--logo"
+          className="navbar__socials--ld"
           src={linkedinlogo}
           alt="linkedinlogo"
         />

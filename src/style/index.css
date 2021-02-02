@@ -70,9 +70,9 @@
   margin-left: 2%;
 }
 
-.navbar__socials--logo {
-  height: 25px;
-  width: 25px;
+.navbar__socials--gh, .navbar__socials--ld {
+  height: 30px;
+  width: 30px;
   margin-right: 10px;
 }
 
