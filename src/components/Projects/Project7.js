@@ -5,7 +5,6 @@ import { Carousel, Button, Modal } from "react-bootstrap";
 import arch1 from "../../Assets/Projectpics/arch1.PNG";
 import arch2 from "../../Assets/Projectpics/arch2.PNG";
 import arch3 from "../../Assets/Projectpics/arch3.PNG";
-import omdbvid from "../../Assets/projectvids/OMDB - Vid.mp4";
 
 const Project7 = () => {
   const [modal, setModal] = useState(false);
@@ -18,13 +17,13 @@ const Project7 = () => {
         <div className="project__card--title">Architect-Studio</div>
         <Carousel>
           <Carousel.Item>
-            <img className="project__card--mainpic" src={arch1} alt="picture" />
+            <img className="project__card--mainpic" src={arch1} alt="mainpic" />
           </Carousel.Item>
           <Carousel.Item>
-            <img className="project__card--mainpic" src={arch2} alt="picture" />
+            <img className="project__card--mainpic" src={arch2} alt="mainpic" />
           </Carousel.Item>
           <Carousel.Item>
-            <img className="project__card--mainpic" src={arch3} alt="picture" />
+            <img className="project__card--mainpic" src={arch3} alt="mainpic" />
           </Carousel.Item>
         </Carousel>
         <Button

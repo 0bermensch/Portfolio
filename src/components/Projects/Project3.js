@@ -21,21 +21,21 @@ const Project3 = () => {
             <img
               className="project__card--mainpic"
               src={country1}
-              alt="picture"
+              alt="mainpic"
             />
           </Carousel.Item>
           <Carousel.Item>
             <img
               className="project__card--mainpic"
               src={country2}
-              alt="picture"
+              alt="mainpic"
             />
           </Carousel.Item>
           <Carousel.Item>
             <img
               className="project__card--mainpic"
               src={country3}
-              alt="picture"
+              alt="mainpic"
             />
           </Carousel.Item>
         </Carousel>
