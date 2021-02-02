@@ -24,7 +24,7 @@ const Introduction = () => {
           <b>'Full-Stack Web and Mobile Developer';</b>
         </Typist>
       </div>
-      <Link className="intro__toprojects">
+      <Link className="intro__toprojects" to="projects">
         <div className="intro__toprojectscontainer">
           <div className="intro__toprojects--text">projects</div>
           <img
