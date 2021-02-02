@@ -1,8 +1,38 @@
 .footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   background-color: black;
   font-family: "jost-b";
   color: $offwhite;
   text-align: center;
-  height: 12vh;
-  font-size: 1.5rem;
+  &__socials {
+    width: 20%;
+    padding-top: 10px;
+  }
+  &__socials--logo {
+    height: 30px;
+    width: 30px;
+  }
+}
+
+@include tablet {
+  .footer {
+    height: 12vh;
+    font-size: 1.5rem;
+    &__space {
+      width: 30%;
+    }
+    &__socials {
+      width: 30%;
+      flex-direction: row;
+      padding-top: 10px;
+      justify-content: end;
+    }
+    &__socials--logo {
+      height: 50px;
+      width: 50px;
+      margin: 0 10px;
+    }
+  }
 }

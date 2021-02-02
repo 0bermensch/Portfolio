@@ -59,7 +59,7 @@
   background-color: white;
 }
 
-.navbar__socials {
+.navbar__logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -71,11 +71,9 @@
   width: 30%;
 }
 
-.navbar__socials--gh, .navbar__socials--ld {
-  height: 30px;
-  width: 30px;
-  margin-right: 10px;
-  display: inline !important;
+.navbar__logo--logo {
+  height: 40px;
+  width: 40px;
 }
 
 .navbar__hamburger {
@@ -880,7 +878,7 @@
   }
   .contact__form--submit {
     width: 20%;
-    font-size: 30px;
+    font-size: 16px;
   }
   .contact__email, .contact__phone {
     display: -webkit-box;
@@ -922,12 +920,56 @@
 }
 
 .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   background-color: black;
   font-family: "jost-b";
   color: #f7e9e9;
   text-align: center;
-  height: 12vh;
-  font-size: 1.5rem;
+}
+
+.footer__socials {
+  width: 20%;
+  padding-top: 10px;
+}
+
+.footer__socials--logo {
+  height: 30px;
+  width: 30px;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer {
+    height: 12vh;
+    font-size: 1.5rem;
+  }
+  .footer__space {
+    width: 30%;
+  }
+  .footer__socials {
+    width: 30%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding-top: 10px;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+  }
+  .footer__socials--logo {
+    height: 50px;
+    width: 50px;
+    margin: 0 10px;
+  }
 }
 
 body {

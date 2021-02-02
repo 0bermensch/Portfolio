@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import hamburger from "../Assets/navicons/icon-hamburger.svg";
-import linkedinlogo from "../Assets/icons/linkedin-original.svg";
-import githublogo from "../Assets/icons/icons8-github.svg";
+import mylogo from "../Assets/Mylogo.png";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Link } from "react-scroll";
 
@@ -46,17 +45,8 @@ const Navigation = () => {
 
   return (
     <div className="navbar">
-      <div className="navbar__socials">
-        <img
-          className="navbar__socials--gh"
-          src={githublogo}
-          alt="githublogo"
-        />
-        <img
-          className="navbar__socials--ld"
-          src={linkedinlogo}
-          alt="linkedinlogo"
-        />
+      <div className="navbar__logo">
+        <img className="navbar__logo--logo" src={mylogo} />
       </div>
       <div onClick={() => toggle(navIcon)}>
         <img

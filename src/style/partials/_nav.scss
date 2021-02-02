@@ -7,19 +7,17 @@
   display: flex;
   flex-direction: row;
   background-color: white;
-  &__socials {
+  &__logo {
     display: flex;
     flex-direction: row;
     margin-left: 2%;
     width: 30%;
   }
-  &__socials--gh,
-  &__socials--ld {
-    height: 30px;
-    width: 30px;
-    margin-right: 10px;
-    display: inline !important;
+  &__logo--logo {
+    height: 40px;
+    width: 40px;
   }
+
   &__hamburger {
     fill: white;
   }
