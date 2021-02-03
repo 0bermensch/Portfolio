@@ -5,7 +5,6 @@ import githublogo from "../Assets/icons/icons8-github.svg";
 const Footer = () => {
   return (
     <div className="footer">
-      <div className="footer__space"></div>
       <div className="footer__info">
         <div>Jason Lo</div>
         <div>© Vancouver, BC 2021</div>
