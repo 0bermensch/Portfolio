@@ -138,6 +138,7 @@
     list-style-type: none;
     font-family: "jost-m";
     margin-right: 2%;
+    padding-top: 5px;
   }
   .navbar__navs--item {
     margin-left: 2rem;
@@ -950,12 +951,12 @@
   .footer {
     height: 12vh;
     font-size: 1.5rem;
-  }
-  .footer__space {
-    width: 30%;
+    padding: 0 10% 0 40%;
   }
   .footer__socials {
-    width: 30%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;

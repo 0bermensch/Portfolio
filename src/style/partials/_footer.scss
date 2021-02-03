@@ -20,8 +20,10 @@
   .footer {
     height: 12vh;
     font-size: 1.5rem;
+    padding: 0 10% 0 40%;
+
     &__socials {
-      width: 30%;
+      display: flex;
       flex-direction: row;
       padding-top: 10px;
       justify-content: end;
