@@ -28,12 +28,12 @@ const Project7 = () => {
         </Carousel>
         <Button
           className="project__card--detailb"
-          variant="primary"
+          variant="light"
           onClick={() => setModal(true)}
         >
           <div className="project__card--buttontext">Details</div>
         </Button>
-        <Button className="project__card--demob" variant="primary">
+        <Button className="project__card--demob" variant="light">
           <a
             className="project__card--buttontext"
             href="https://architect-studio.vercel.app/#/"

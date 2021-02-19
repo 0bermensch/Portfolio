@@ -42,7 +42,7 @@ const Project2 = () => {
 
         <Button
           className="project__card--detailb"
-          variant="primary"
+          variant="light"
           onClick={() => setModal(true)}
         >
           <div className="project__card--buttontext">Details</div>

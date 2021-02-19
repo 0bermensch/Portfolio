@@ -41,7 +41,7 @@ const Project4 = () => {
         </Carousel>
         <Button
           className="project__card--detailb"
-          variant="primary"
+          variant="light"
           onClick={() => setModal(true)}
         >
           <div className="project__card--buttontext">Details</div>

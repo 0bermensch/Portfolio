@@ -45,9 +45,16 @@ const Navigation = () => {
 
   return (
     <div className="navbar">
-      <div className="navbar__logo">
+      <Link
+        className="navbar__logo"
+        activeClass="active"
+        spy={true}
+        smooth={true}
+        to="intro"
+      >
         <img className="navbar__logo--logo" src={mylogo} />
-      </div>
+      </Link>
+
       <div onClick={() => toggle(navIcon)}>
         <img
           className="navbar__hamburger"
@@ -58,17 +65,7 @@ const Navigation = () => {
       </div>
       {hamburgerNav}
       <ul className="navbar__navs">
-        <li>
-          <Link
-            className="navbar__navs--item"
-            activeClass="active"
-            spy={true}
-            smooth={true}
-            to="intro"
-          >
-            Introduction
-          </Link>
-        </li>
+        <li></li>
         <li>
           <Link
             className="navbar__navs--item"
