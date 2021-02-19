@@ -832,8 +832,8 @@
 }
 
 .contact__email--logo, .contact__phone--logo {
-  width: 80px;
-  height: 80px;
+  width: 50px;
+  height: 50px;
 }
 
 .contact__form--bodyinput {
@@ -891,7 +891,7 @@
             flex-direction: row;
   }
   .contact__email--email, .contact__phone--number {
-    padding-top: 30px;
+    padding-top: 15px;
     padding-left: 2%;
   }
 }
@@ -912,11 +912,12 @@
     text-align: start;
   }
   .contact__email--logo, .contact__phone--logo {
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
   }
   .contact__email--email, .contact__phone--number {
-    font-size: 20px;
+    font-size: 18px;
+    padding-top: 30px;
   }
 }
 
@@ -950,7 +951,7 @@
 @media only screen and (min-width: 768px) {
   .footer {
     height: 12vh;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     padding: 0 10% 0 40%;
   }
   .footer__socials {
