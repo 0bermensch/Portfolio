@@ -52,10 +52,8 @@ const Tech = () => {
     <div className="techcontainer" id="tech">
       <div className="techtitle">Tech</div>
       <div className="tech">
-        <img className="tech__pic" src={pic} alt="pic" />
-
-        <div data-aos="fade-up" className="tech__content">
-          <div className="tech__frontend">
+        <div className="tech__content">
+          <div data-aos="fade-up" className="tech__frontend">
             <h2 className="tech__title">Front-End</h2>
             <div className="tech__info">
               {frontend.map((content) => {
@@ -72,7 +70,7 @@ const Tech = () => {
               })}
             </div>
           </div>
-          <div className="tech__backend">
+          <div data-aos="fade-up" className="tech__backend">
             <h2 className="tech__title">Back-End</h2>
             <div className="tech__info">
               {backend.map((content) => {
@@ -89,7 +87,7 @@ const Tech = () => {
               })}
             </div>
           </div>
-          <div className="tech__database">
+          <div data-aos="fade-up" className="tech__database">
             <h2 className="tech__title">Database</h2>
             <div className="tech__info">
               {database.map((content) => {
@@ -106,7 +104,7 @@ const Tech = () => {
               })}
             </div>
           </div>
-          <div className="tech__others">
+          <div data-aos="fade-up" className="tech__others">
             <h2 className="tech__title">Other</h2>
             <div className="tech__info">
               {other.map((content) => {
