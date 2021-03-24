@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.fe6dfc8e.chunk.css",
-    "main.js": "/static/js/main.68c080c0.chunk.js",
-    "main.js.map": "/static/js/main.68c080c0.chunk.js.map",
+    "main.js": "/static/js/main.f02796b8.chunk.js",
+    "main.js.map": "/static/js/main.f02796b8.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.0d3e0eff.js",
     "runtime-main.js.map": "/static/js/runtime-main.0d3e0eff.js.map",
     "static/css/2.e0e37e09.chunk.css": "/static/css/2.e0e37e09.chunk.css",
@@ -17,7 +17,7 @@
     "static/media/index.css": "/static/media/Jost-Regular.ba7997a1.ttf",
     "static/media/CoverLetter.6a1b0c62.pdf": "/static/media/CoverLetter.6a1b0c62.pdf",
     "static/media/InStock - Vid.90302070.mp4": "/static/media/InStock - Vid.90302070.mp4",
-    "static/media/JasonLoResume.0233584c.pdf": "/static/media/JasonLoResume.0233584c.pdf",
+    "static/media/JasonLo_Resume.7e0973c7.pdf": "/static/media/JasonLo_Resume.7e0973c7.pdf",
     "static/media/Jason_Lo_WD.faa68ac5.jpg": "/static/media/Jason_Lo_WD.faa68ac5.jpg",
     "static/media/RestCountry-App - Vid.997ffd12.mp4": "/static/media/RestCountry-App - Vid.997ffd12.mp4",
     "static/media/WeatherApp - Vid.71d1734d.mp4": "/static/media/WeatherApp - Vid.71d1734d.mp4",
@@ -68,6 +68,6 @@
     "static/css/2.e0e37e09.chunk.css",
     "static/js/2.f33bb832.chunk.js",
     "static/css/main.fe6dfc8e.chunk.css",
-    "static/js/main.68c080c0.chunk.js"
+    "static/js/main.f02796b8.chunk.js"
   ]
 }
