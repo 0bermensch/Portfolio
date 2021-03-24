@@ -47,13 +47,12 @@ const Project3 = () => {
           >
             <div className="project__card--buttontext">Details</div>
           </Button>
-          <Button className="project__card--demob" variant="light">
-            <a
-              className="project__card--buttontext"
-              href="https://rest-country-app.vercel.app/"
-            >
-              Demo
-            </a>
+          <Button
+            className="project__card--demob"
+            href="https://rest-country-app.vercel.app/"
+            variant="light"
+          >
+            Demo
           </Button>
         </div>
       </div>

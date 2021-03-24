@@ -3,7 +3,7 @@ import codeicon from "../Assets/about/icons8-code-64.png";
 import responsiveicon from "../Assets/about/icons8-responsive-64.png";
 import timeicon from "../Assets/about/icons8-time-limit-64.png";
 import improveicon from "../Assets/about/icons8-improvement-50.png";
-import resume from "../Assets/JasonLoResume.pdf";
+import resume from "../Assets/JasonLo_Resume.pdf";
 import coverletter from "../Assets/CoverLetter.pdf";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -22,8 +22,8 @@ const About = () => {
         <div className="about__content--missiontext">
           Hey there! I am Jason. I am a full-stack Web and Mobile Developer. I
           am passionate about developing client facing applications, it is my
-          goal to help dreamers, entreprenuers, and businessesactualize their
-          ideas into an application.
+          goal to help dreamers, entreprenuers, and businesses to actualize
+          their ideas into an application.
         </div>
       </div>
       <div className="about__downloads">

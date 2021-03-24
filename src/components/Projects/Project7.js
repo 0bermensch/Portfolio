@@ -33,13 +33,12 @@ const Project7 = () => {
         >
           <div className="project__card--buttontext">Details</div>
         </Button>
-        <Button className="project__card--demob" variant="light">
-          <a
-            className="project__card--buttontext"
-            href="https://architect-studio.vercel.app/#/"
-          >
-            Demo
-          </a>
+        <Button
+          className="project__card--demob"
+          href="https://architect-studio.vercel.app/#/"
+          variant="light"
+        >
+          Demo
         </Button>
       </div>
       <Modal
