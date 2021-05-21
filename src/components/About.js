@@ -82,7 +82,7 @@ const About = () => {
               src={improveicon}
               alt="improveicon"
             />
-            <div className="about__values--value">Improvment</div>
+            <div className="about__values--value">Improvement</div>
             <div className="about__values--details">
               I strive to constantly improve, learn new technologies, and stay
               on top of industry standards.
